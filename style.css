@@ -487,6 +487,22 @@ html {
 
 /* Ensure the first content on each standalone page clears the header */
 #portfolio-page { padding-top: 100px; }   /* adjust if your header height changes */
+/* Uniform spacing for all sections */
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+section h2 {
+  margin-bottom: 25px;
+  text-align: left;
+  color: #00ffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 
 
 
