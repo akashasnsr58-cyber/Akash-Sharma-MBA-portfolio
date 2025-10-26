@@ -388,10 +388,11 @@ html {
 }
 .hero-content .socials { margin-top: 16px; }
 #about-page, #education, #experience {
-  padding: 100px 60px;
+  padding: 60px 60px;      /* smaller padding for tighter layout */
   color: white;
   background: linear-gradient(145deg, #081621, #0b1d26);
-  min-height: 100vh;
+  min-height: auto;        /* remove forced full-screen height */
+  margin-bottom: 0;        /* remove extra spacing */
 }
 
 #about-page h2, #education h2, #experience h2 {
@@ -427,6 +428,7 @@ html {
   background: #00cccc;
   box-shadow: 0 0 15px #00ffff;
 }
+
 
 
 
