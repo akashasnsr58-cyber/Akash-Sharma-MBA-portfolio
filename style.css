@@ -587,6 +587,43 @@ html, body { overflow-x: hidden; }
     gap: 12px;
   }
 }
+/* base: make sizing predictable */
+* { box-sizing: border-box; }
+
+/* header container across the full width */
+.header {
+  width: 100%;
+  background: #081c24;
+}
+
+/* inner row with brand on the left, links on the right */
+.header .row {
+  max-width: 1200px;       /* keep content centered on desktop */
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* brand left, nav right */
+  gap: 12px;                          /* small horizontal gap */
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: nowrap;        /* keep on one line */
+  gap: 16px;                /* reduce space between buttons */
+  min-width: 0;             /* allow shrinking inside the row */
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 8px 12px;        /* smaller padding so everything fits */
+  white-space: nowrap;      /* keep each label on one line */
+  font-size: clamp(14px, 1.1vw, 16px); /* shrink slightly if needed */
+}
+
+/* in case your brand text is very long */
+.brand { flex: 0 1 auto; min-width: 0; }
+
 
 
 
