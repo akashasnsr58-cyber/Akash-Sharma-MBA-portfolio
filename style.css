@@ -387,6 +387,47 @@ html {
   color: #081621;
 }
 .hero-content .socials { margin-top: 16px; }
+#about-page, #education, #experience {
+  padding: 100px 60px;
+  color: white;
+  background: linear-gradient(145deg, #081621, #0b1d26);
+  min-height: 100vh;
+}
+
+#about-page h2, #education h2, #experience h2 {
+  color: #00ffff;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#education p, #about-page p, #experience p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#experience h3 {
+  color: #00cccc;
+  margin-top: 25px;
+}
+
+#experience .btn {
+  display: inline-block;
+  background: #00ffff;
+  color: #081621;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#experience .btn:hover {
+  background: #00cccc;
+  box-shadow: 0 0 15px #00ffff;
+}
+
 
 
 
