@@ -433,6 +433,46 @@ html {
   padding-top: 40px;
   margin-top: 20px;
 }
+#portfolio-page {
+  padding: 80px 60px;
+  background: linear-gradient(145deg, #081621, #0b1d26);
+  color: white;
+  min-height: 100vh;
+}
+
+#portfolio-page h2 {
+  color: #00ffff;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#portfolio-page h3 {
+  color: #00cccc;
+  margin-top: 30px;
+}
+
+#portfolio-page p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+#portfolio-page .btn {
+  display: inline-block;
+  background: #00ffff;
+  color: #081621;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#portfolio-page .btn:hover {
+  background: #00cccc;
+  box-shadow: 0 0 15px #00ffff;
+}
+
 
 
 
