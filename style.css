@@ -579,6 +579,15 @@ html, body { overflow-x: hidden; }
 @media (max-width: 700px) {
   .nav-links { width: 100%; justify-content: flex-start; }
 }
+@media (max-width: 900px) {
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+}
+
 
 
 
