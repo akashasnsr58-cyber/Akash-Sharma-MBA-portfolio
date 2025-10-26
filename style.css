@@ -472,6 +472,20 @@ html {
   background: #00cccc;
   box-shadow: 0 0 15px #00ffff;
 }
+/* Make anchor/section jumps clear a fixed navbar (~80–100px) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;   /* offset for anchor jumps */
+}
+
+/* If you ever link to a specific section id, keep it clear of the header */
+#about-page, #education, #experience, #portfolio-page {
+  scroll-margin-top: 90px;
+}
+
+/* Ensure the first content on each standalone page clears the header */
+#portfolio-page { padding-top: 100px; }   /* adjust if your header height changes */
+
 
 
 
