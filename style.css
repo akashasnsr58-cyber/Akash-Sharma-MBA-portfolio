@@ -358,5 +358,34 @@ html {
   }
 }
 #about-myself, .hero-right { display: none !important; }
+/* Social icons under the hero button */
+.socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.socials .social {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #0b1d26;
+  background: #00ffff;
+  box-shadow: 0 0 12px rgba(0,255,255,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.socials .social:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(0,255,255,0.9);
+  background: #00cccc;
+  color: #081621;
+}
+
 
 
