@@ -274,6 +274,8 @@ a{ color: var(--link); }
 .hero-content h1 span {
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff;
+  display: inline;
+  white-space: nowrap; /* ✅ Prevents text from breaking to new line */
 }
 
 .hero-content h3 {
@@ -485,6 +487,7 @@ html {
 
 /* Ensure the first content on each standalone page clears the header */
 #portfolio-page { padding-top: 100px; }   /* adjust if your header height changes */
+
 
 
 
