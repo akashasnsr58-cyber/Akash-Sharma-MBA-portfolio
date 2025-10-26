@@ -502,6 +502,43 @@ section h2 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+/* NAV — make it resilient on smaller widths */
+.navbar {
+  position: fixed;     /* if you already use fixed/sticky, keep it */
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 20px;  /* slightly smaller padding so links fit */
+  z-index: 1000;
+}
+
+.navbar .logo { 
+  margin-right: auto;  /* pushes links to the right side */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;           /* reduce gap so more items fit */
+  flex-wrap: wrap;     /* ✅ allow wrapping instead of overflowing */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  white-space: nowrap; /* keep each label on one line (no mid-word wrap) */
+}
+@media (max-width: 900px) {
+  .nav-links { gap: 12px; }
+}
+
+@media (max-width: 700px) {
+  .nav-links { width: 100%; justify-content: flex-start; }
+}
+html, body { overflow-x: hidden; }
+
 
 
 
