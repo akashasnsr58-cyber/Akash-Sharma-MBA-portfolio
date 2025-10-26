@@ -428,6 +428,12 @@ html {
   background: #00cccc;
   box-shadow: 0 0 15px #00ffff;
 }
+#education, #experience {
+  border-top: 1px solid #0f2a38;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+
 
 
 
